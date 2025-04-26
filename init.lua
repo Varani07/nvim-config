@@ -1,0 +1,2 @@
+require("varanin")
+print("hello")
