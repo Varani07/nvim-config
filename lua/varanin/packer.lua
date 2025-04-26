@@ -25,4 +25,17 @@ return require('packer').startup(function(use)
   use ('ThePrimeagen/harpoon')
   use ('mbbill/undotree')
   use ('tpope/vim-fugitive')
+
+  use { 'williamboman/mason.nvim', run = ':MasonUpdate' }
+  use 'williamboman/mason-lspconfig.nvim'
+  use 'neovim/nvim-lspconfig'
+
+  -- Autocomplete básico com <C-Space>
+  use {
+	  'hrsh7th/nvim-cmp',
+	  requires = {
+		  'hrsh7th/cmp-nvim-lsp',
+		  'L3MON4D3/LuaSnip'
+	  }
+  }
 end)
