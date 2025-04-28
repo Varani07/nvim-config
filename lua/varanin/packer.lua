@@ -38,4 +38,6 @@ return require('packer').startup(function(use)
 		  'L3MON4D3/LuaSnip'
 	  }
   }
+  use {"voldikss/vim-floaterm"}
+  use 'nvim-tree/nvim-web-devicons'
 end)

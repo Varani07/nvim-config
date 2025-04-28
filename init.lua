@@ -1,2 +1,1 @@
 require("varanin")
-print("hello")
